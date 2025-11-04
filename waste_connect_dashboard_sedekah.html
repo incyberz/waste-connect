@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard Warga | WasteConnect</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+      .navbar-brand {
+        font-weight: 700;
+        color: #28a745 !important;
+      }
+      .card-icon {
+        font-size: 2.5rem;
+        color: #28a745;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">WasteConnect</a>
+        <div class="d-flex">
+          <a href="#" class="btn btn-outline-success btn-sm me-2"
+            >Posting Sampah</a
+          >
+          <a href="#" class="btn btn-success btn-sm">Logout</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="py-4 text-center bg-success text-white">
+      <div class="container">
+        <h1 class="fw-bold mb-1">Dashboard Warga</h1>
+        <p class="mb-0">Selamat datang, <b>Nama Warga</b> 👋</p>
+      </div>
+    </header>
+
+    <!-- Section: WasteCoin Summary -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-4">
+          <div class="col-md-6">
+            <div class="card shadow-sm border-0">
+              <div class="card-body">
+                <div class="card-icon mb-2">💰</div>
+                <h4 class="fw-bold">Saldo SedekahCoin Anda</h4>
+                <h2 class="text-success fw-bold mb-3">
+                  2.350 <small class="text-muted fs-6">SC</small>
+                </h2>
+                <p class="text-muted mb-3">Setara dengan <b>Rp 23.500</b></p>
+                <a href="#" class="btn btn-success rounded-pill"
+                  >Tukar Poin Sekarang</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Progress -->
+        <div class="row justify-content-center text-center">
+          <div class="col-md-6">
+            <h6 class="fw-semibold mb-2">Progress WasteCoin bulan ini</h6>
+            <div class="progress mb-3" style="height: 20px">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                style="width: 65%"
+              >
+                65%
+              </div>
+            </div>
+            <small class="text-muted"
+              >Target: 3.000 SC untuk bonus voucher belanja</small
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Riwayat Posting Sampah -->
+    <section class="py-4 bg-white border-top">
+      <div class="container">
+        <h4 class="fw-bold text-success mb-3 text-center">
+          🗑️ Riwayat Posting Sampah Anda
+        </h4>
+
+        <div class="table-responsive">
+          <table class="table table-striped align-middle">
+            <thead class="table-success">
+              <tr>
+                <th>Tanggal</th>
+                <th>Jenis Sampah</th>
+                <th>Kategori</th>
+                <th>Status</th>
+                <th>Poin</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>03 Nov 2025</td>
+                <td>Plastik campuran</td>
+                <td>Sedekah</td>
+                <td><span class="badge bg-success">Sudah Diambil</span></td>
+                <td>+10</td>
+              </tr>
+              <tr>
+                <td>01 Nov 2025</td>
+                <td>Sisa sayuran dapur</td>
+                <td>Sedekah</td>
+                <td>
+                  <span class="badge bg-warning text-dark"
+                    >Menunggu Jemput</span
+                  >
+                </td>
+                <td>+10</td>
+              </tr>
+              <tr>
+                <td>30 Okt 2025</td>
+                <td>Botol PET 1 kg</td>
+                <td>Lelang</td>
+                <td><span class="badge bg-success">Terjual</span></td>
+                <td>+50</td>
+              </tr>
+              <tr>
+                <td>29 Okt 2025</td>
+                <td>Sampah daun kering</td>
+                <td>Sedekah</td>
+                <td><span class="badge bg-secondary">Kadaluarsa</span></td>
+                <td>0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kawan Anda -->
+    <!-- Section: Kawan Anda -->
+    <section id="kawan-anda" class="py-5 bg-light border-top">
+      <div class="container">
+        <h4 class="fw-bold text-success text-center mb-4">
+          👥 Kawan Anda di Sekitar
+        </h4>
+        <p class="text-center text-muted mb-5">
+          Berikut warga yang aktif sedekah sampah di wilayah
+          <b>RT 04 / RW 02, Desa Sukamaju, Kec. Tanjungsari</b>.
+        </p>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Kartu Kawan 1 -->
+          <div class="col-md-3 col-sm-6">
+            <div class="card shadow-sm border-0 text-center p-3">
+              <img
+                src="https://i.pravatar.cc/120?img=1"
+                alt="avatar"
+                class="rounded-circle mx-auto mb-3"
+                width="100"
+                height="100"
+              />
+              <h6 class="fw-bold mb-1">Siti Aisyah</h6>
+              <small class="text-muted">RT 04 / RW 02</small>
+              <div class="mt-2 text-success fw-bold">💰 1.850 SC</div>
+              <div class="mt-3">
+                <a href="#" class="btn btn-sm btn-outline-success rounded-pill"
+                  >Lihat Profil</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Kartu Kawan 2 -->
+          <div class="col-md-3 col-sm-6">
+            <div class="card shadow-sm border-0 text-center p-3">
+              <img
+                src="https://i.pravatar.cc/120?img=5"
+                alt="avatar"
+                class="rounded-circle mx-auto mb-3"
+                width="100"
+                height="100"
+              />
+              <h6 class="fw-bold mb-1">Budi Santoso</h6>
+              <small class="text-muted">RT 04 / RW 02</small>
+              <div class="mt-2 text-success fw-bold">💰 2.120 SC</div>
+              <div class="mt-3">
+                <a href="#" class="btn btn-sm btn-outline-success rounded-pill"
+                  >Kirim Pesan</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Kartu Kawan 3 -->
+          <div class="col-md-3 col-sm-6">
+            <div class="card shadow-sm border-0 text-center p-3">
+              <img
+                src="https://i.pravatar.cc/120?img=8"
+                alt="avatar"
+                class="rounded-circle mx-auto mb-3"
+                width="100"
+                height="100"
+              />
+              <h6 class="fw-bold mb-1">Dewi Lestari</h6>
+              <small class="text-muted">RT 05 / RW 02</small>
+              <div class="mt-2 text-success fw-bold">💰 3.010 SC</div>
+              <div class="mt-3">
+                <a href="#" class="btn btn-sm btn-outline-success rounded-pill"
+                  >Lihat Profil</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Kartu Kawan 4 -->
+          <div class="col-md-3 col-sm-6">
+            <div class="card shadow-sm border-0 text-center p-3">
+              <img
+                src="https://i.pravatar.cc/120?img=12"
+                alt="avatar"
+                class="rounded-circle mx-auto mb-3"
+                width="100"
+                height="100"
+              />
+              <h6 class="fw-bold mb-1">Rahmat Hidayat</h6>
+              <small class="text-muted">Desa Sukamaju</small>
+              <div class="mt-2 text-success fw-bold">💰 950 SC</div>
+              <div class="mt-3">
+                <a href="#" class="btn btn-sm btn-outline-success rounded-pill"
+                  >Kirim Pesan</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tombol Lihat Semua -->
+        <div class="text-center mt-5">
+          <a href="#" class="btn btn-success rounded-pill px-4">
+            🌍 Lihat Semua Kawan di Kecamatan
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3 bg-success text-white text-center mt-4">
+      <div class="text-white my-2">
+        <b class="d-block my-4">UX-UI Links:</b>
+        <a class="d-block" href="index.html">Waste Connect Index</a>
+        <a class="d-block" href="waste_connect.html"
+          >Waste Connect Landing Page</a
+        >
+        <a class="d-block" href="waste_connect_dashboard_sedekah.html"
+          >Waste Connect - Sedekah Sampah</a
+        >
+        <a class="d-block" href="waste_connect_dashboard_eco_reward.html"
+          >Waste Connect - EcoReward</a
+        >
+        <a class="d-block" href="waste_connect_marketplace.html"
+          >Waste Connect - Marketplace</a
+        >
+        <a class="d-block" href="smart_government_dashboard.html"
+          >Waste Connect - Smart Government Dashboard</a
+        >
+      </div>
+      <small
+        >&copy; 2025 WasteConnect — “Postinglah Sampah pada Tempatnya!” — UX-UI
+        by <a href="https://kangsolihin.web.id">Kang Solihin</a></small
+      >
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

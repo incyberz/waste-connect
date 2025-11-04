@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WasteConnect - Postinglah Sampah pada Tempatnya!</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .hero {
+        background: linear-gradient(to right, #2c3e50, #27ae60);
+        color: white;
+        padding: 100px 0;
+        text-align: center;
+      }
+      .feature-icon {
+        font-size: 3rem;
+        color: #27ae60;
+      }
+      footer {
+        background-color: #222;
+        color: #ccc;
+        padding: 30px 0;
+        text-align: center;
+      }
+      .gradasi-hijau {
+        background: linear-gradient(#bcf4d3, rgb(132, 247, 132));
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">WasteConnect</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#sedekah">Sedekah </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#marketplace">Marketplace </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#wastecoin">WasteCoin </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <h1 class="fw-bold display-4">Postinglah Sampah pada Tempatnya!</h1>
+        <p class="lead mt-3">
+          Sistem cerdas yang mempertemukan warga, pemulung, peternak, pengompos,
+          dan pemerintah untuk pengelolaan sampah berkelanjutan.
+        </p>
+        <a href="#sedekah" class="btn btn-light btn-lg mt-3">Mulai Posting</a>
+        <a href="#marketplace" class="btn btn-light btn-lg mt-3">Cari Sampah</a>
+      </div>
+    </section>
+
+    <!-- Fitur -->
+    <section id="fitur" class="py-5">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4">Fitur Unggulan WasteConnect</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm p-4">
+              <div class="feature-icon mb-3">📸</div>
+              <h5>Posting Sampah</h5>
+              <p>
+                Warga dapat sedekah sampah dengan cara memposting sampahnya
+                untuk diambil oleh pihak yang membutuhkan.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm p-4">
+              <div class="feature-icon mb-3">🤝</div>
+              <h5>Konektivitas Cerdas</h5>
+              <p>
+                Mempertemukan warga dengan pemulung, peternak maggot, atau
+                pengompos secara otomatis berdasarkan lokasi dan kebutuhan.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm p-4">
+              <div class="feature-icon mb-3">📊</div>
+              <h5>Dashboard Realtime</h5>
+              <p>
+                Pemerintah dapat memantau kontribusi warga dan aktivitas
+                pengelolaan sampah dalam bentuk data dan grafik realtime.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tentang -->
+    <section id="tentang" class="py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4">Tentang WasteConnect</h2>
+        <p class="lead">
+          WasteConnect hadir untuk membangun ekosistem pengelolaan sampah yang
+          kolaboratif, transparan, dan berkelanjutan. Dengan pendekatan
+          teknologi, kami ingin mengubah perilaku warga menjadi lebih peduli
+          terhadap lingkungan.
+        </p>
+      </div>
+    </section>
+
+    <!-- ====================================== -->
+    <!-- Sedekah Sampah -->
+    <!-- ====================================== -->
+    <section id="sedekah" class="py-5 bg-white gradasi-hijau">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-3 text-success">Sedekah Sampah</h2>
+        <div class="my-3">
+          <img
+            src="image/posting.jpg"
+            alt="Posting Sampah"
+            class="img-fluid img-thumbnail"
+          />
+        </div>
+        <p class="lead mb-5">
+          Ya benar! Kini Anda dapat bersedekah dengan sampah... daripada busuk,
+          daripada bau, daripada menumpuk di dapur —
+          <strong>posting aja!</strong>
+          Biarkan sampah organik Anda menjadi rezeki bagi peternak maggot atau
+          pengompos, dan sampah anorganik menjadi berkah bagi para pemulung yang
+          mencari nafkah. Kalo banyak Anda bisa pilih Opsi Lelang Sampah!
+        </p>
+
+        <div class="row justify-content-center g-4">
+          <div class="col-md-3">
+            <div class="card border-0 shadow-sm p-3 h-100">
+              <div class="fs-1 text-success mb-2">🍌</div>
+              <h5 class="fw-bold">Sampah Organik</h5>
+              <p class="small text-muted">
+                Sisa dapur, buah busuk, dan sayuran bisa disedekahkan untuk
+                peternak maggot atau pengompos lokal.
+              </p>
+              <a href="#posting" class="btn btn-outline-success mt-3"
+                >Posting Sekarang</a
+              >
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card border-0 shadow-sm p-3 h-100">
+              <div class="fs-1 text-success mb-2">🥤</div>
+              <h5 class="fw-bold">Sampah Anorganik</h5>
+              <p class="small text-muted">
+                Botol plastik, kardus, dan kaleng bisa membantu pemulung dan
+                daur ulang industri kreatif.
+              </p>
+              <a href="#posting" class="btn btn-outline-success mt-3"
+                >Posting Sekarang</a
+              >
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card border-0 shadow-sm p-3 h-100">
+              <div class="fs-1 text-success mb-2">📱</div>
+              <h5 class="fw-bold">Posting Mudah</h5>
+              <p class="small text-muted">
+                Cukup ambil foto dan posting di aplikasi, sistem kami akan
+                mempertemukan Anda dengan pihak penerima terdekat.
+              </p>
+              <a href="#posting" class="btn btn-outline-success mt-3"
+                >Posting Sekarang</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="text-center mb-4">
+          <p class="fw-bold text-success">
+            “Jagalah diri kalian dari api neraka walau hanya dengan bersedekah
+            sampah...” <i>(bukan Hadits)</i>
+          </p>
+          <p class="text-muted fst-italic">
+            Jika tidak mampu, maka jangan dibuang sembarangan.
+          </p>
+        </div>
+
+        <div class="col-lg-10 mx-auto text-center">
+          <!-- Tombol untuk membuka detail -->
+          <button
+            class="btn btn-outline-success btn-sm"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#selengkapnya"
+            aria-expanded="false"
+            aria-controls="selengkapnya"
+          >
+            <i class="bi bi-chevron-down"></i> Lihat Selengkapnya
+          </button>
+
+          <!-- Paragraf tambahan disembunyikan -->
+          <div class="collapse mt-3" id="selengkapnya">
+            <p class="lead mb-3">
+              Sedekah tidak selalu dalam bentuk uang atau makanan. Sampah
+              organik yang kita buang setiap hari bisa menjadi rezeki bagi
+              peternak maggot, pengompos, atau bahkan menjadi sumber pupuk alami
+              yang menyuburkan bumi. Begitu pula sampah anorganik — botol,
+              kardus, dan plastik — bisa menjadi penghidupan bagi para pemulung
+              yang berjuang di jalanan.
+            </p>
+
+            <p class="lead">
+              Melalui <strong>WasteConnect</strong>, setiap warga dapat
+              menyalurkan niat baiknya dengan mudah: cukup posting sampah yang
+              dimiliki, dan sistem akan mempertemukan dengan pihak yang
+              membutuhkan. Karena di era digital ini, bahkan sampah pun bisa
+              menjadi sarana <em>sedekah</em> dan <em>amal jariyah</em>
+              jika dikelola dengan niat dan cara yang benar.
+            </p>
+
+            <p class="text-muted">
+              <b>Hadits asal</b>: “Jagalah diri kalian dari api neraka walau
+              hanya dengan (bersedekah) setengah butir kurma. Jika tidak mampu,
+              maka dengan ucapan yang baik.” — (HR. Bukhari no. 1413, Muslim no.
+              1016)
+            </p>
+
+            <!-- Tombol tutup -->
+            <button
+              class="btn btn-outline-secondary btn-sm mt-2"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#selengkapnya"
+              aria-expanded="true"
+              aria-controls="selengkapnya"
+            >
+              <i class="bi bi-chevron-up"></i> Tutup
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================== -->
+    <!-- Marketplace Sampah -->
+    <!-- ====================================== -->
+    <section id="marketplace" class="py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-3">Marketplace Sampah</h2>
+        <div class="my-3">
+          <img
+            src="image/pemulung.jpg"
+            alt="Marketplace Sampah"
+            class="img-fluid img-thumbnail"
+          />
+        </div>
+        <p class="lead mb-4">
+          Anda butuh sampah? Plastik, kardus, atau bahan busukan untuk ternak
+          dan kompos?
+          <br />Tenang, semua ada di sini. Temukan sumber daya dari limbah yang
+          bermanfaat!
+        </p>
+
+        <div class="row justify-content-center">
+          <!-- Card 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0 h-100">
+              <div class="card-body">
+                <i class="bi bi-recycle display-4 text-success mb-3"></i>
+                <h5 class="card-title fw-bold">Plastik & Botol Bekas</h5>
+                <p class="card-text">
+                  Daur ulang jadi rupiah! Temukan berbagai jenis plastik siap
+                  olah.
+                </p>
+                <a href="#" class="btn btn-success">Cari Sekarang</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0 h-100">
+              <div class="card-body">
+                <i class="bi bi-tree display-4 text-warning mb-3"></i>
+                <h5 class="card-title fw-bold">Sampah Organik & Busukan</h5>
+                <p class="card-text">
+                  Bahan pakan ternak atau kompos alami, bisa Anda temukan di
+                  sini!
+                </p>
+                <a href="#" class="btn btn-success">Cari Sekarang</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0 h-100">
+              <div class="card-body">
+                <i class="bi bi-box-seam display-4 text-primary mb-3"></i>
+                <h5 class="card-title fw-bold">Kardus & Barang Bekas</h5>
+                <p class="card-text">
+                  Barang bekas berkualitas untuk kebutuhan usaha atau daur
+                  ulang.
+                </p>
+                <a href="#" class="btn btn-success">Cari Sekarang</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================== -->
+    <!-- WasteCoin -->
+    <!-- ====================================== -->
+    <!-- Section: WasteCoin -->
+    <section id="wastecoin" class="py-5 bg-light gradasi-hijau">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-3 text-success">
+          💰 WasteCoin — Posting Sampah Jadi Rupiah
+        </h2>
+        <p class="lead mb-4">
+          Dari sampah jadi pahala, dari pahala jadi rupiah! <br />
+          Setiap kali Anda memposting atau menyalurkan sampah ke tempat yang
+          tepat, Anda mendapatkan poin <b>WasteCoin</b>. Tukarkan poin Anda
+          dengan uang tunai, pulsa, atau voucher belanja lokal.
+        </p>
+
+        <div class="row justify-content-center mb-4">
+          <div class="col-md-8">
+            <div class="table-responsive">
+              <table
+                class="table table-bordered align-middle bg-white shadow-sm"
+              >
+                <thead class="table-success">
+                  <tr>
+                    <th scope="col">Amal Baik Anda</th>
+                    <th scope="col">Poin</th>
+                    <th scope="col">Setara</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Posting sampah plastik</td>
+                    <td>+10</td>
+                    <td>Rp 100</td>
+                  </tr>
+                  <tr>
+                    <td>Menjemput sampah warga</td>
+                    <td>+50</td>
+                    <td>Rp 500</td>
+                  </tr>
+                  <tr>
+                    <td>Edukasi lingkungan / ajak tetangga</td>
+                    <td>+100</td>
+                    <td>Rp 1.000</td>
+                  </tr>
+                  <tr>
+                    <td>Menjadi mitra pengompos / peternak maggot</td>
+                    <td>+250</td>
+                    <td>Rp 2.500</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <p class="mb-4 fst-italic text-muted">
+          Setiap poin WasteCoin yang Anda kumpulkan adalah langkah kecil menuju
+          lingkungan bersih dan berdaya.
+        </p>
+
+        <a href="#!" class="btn btn-success btn-lg rounded-pill shadow-sm">
+          💎 Lihat Nilai Tukar Lengkap
+        </a>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-5 text-center bg-success text-white">
+      <div class="container">
+        <h2 class="fw-bold">Mulai Bersih dari Rumah!</h2>
+        <p class="mb-4">
+          Gabung dengan gerakan digitalisasi sampah untuk Indonesia yang lebih
+          hijau dan cerdas.
+        </p>
+        <a href="#kontak" class="btn btn-light btn-lg">Hubungi Kami</a>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="py-5">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4">Hubungi Kami</h2>
+        <p>
+          Email: <a href="mailto:info@wasteconnect.id">info@wasteconnect.id</a>
+        </p>
+        <p>
+          Instagram:
+          <a href="https://instagram.com/wasteconnect" target="_blank"
+            >@wasteconnect</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="text-white my-2">
+        <b class="d-block my-4">UX-UI Links:</b>
+        <a class="d-block" href="index.html">Waste Connect Index</a>
+        <a class="d-block" href="waste_connect.html"
+          >Waste Connect Landing Page</a
+        >
+        <a class="d-block" href="waste_connect_dashboard_sedekah.html"
+          >Waste Connect - Sedekah Sampah</a
+        >
+        <a class="d-block" href="waste_connect_dashboard_eco_reward.html"
+          >Waste Connect - EcoReward</a
+        >
+        <a class="d-block" href="waste_connect_marketplace.html"
+          >Waste Connect - Marketplace</a
+        >
+        <a class="d-block" href="smart_government_dashboard.html"
+          >Waste Connect - Smart Government Dashboard</a
+        >
+      </div>
+      <small
+        >&copy; 2025 WasteConnect — “Postinglah Sampah pada Tempatnya!” — UX-UI
+        by <a href="https://kangsolihin.web.id">Kang Solihin</a></small
+      >
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

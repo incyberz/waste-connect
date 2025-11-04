@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marketplace Sampah | Waste Connect</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f4f6f8;
+      }
+      .navbar {
+        background-color: #157347;
+      }
+      .navbar-brand,
+      .nav-link {
+        color: #fff !important;
+      }
+      .card {
+        border: none;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease;
+      }
+      .card:hover {
+        transform: scale(1.03);
+      }
+      .badge-category {
+        background: #0d6efd;
+      }
+      .sc-value {
+        color: #157347;
+        font-weight: 600;
+      }
+      .owner {
+        font-size: 0.9rem;
+        color: #666;
+      }
+      .free-tag {
+        font-size: 0.85rem;
+        font-weight: 500;
+        color: #fff;
+        background: #ffc107;
+        padding: 3px 8px;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Waste Connect</a>
+        <div class="d-flex">
+          <a
+            href="waste_connect_dashboard_warga.html"
+            class="btn btn-light btn-sm"
+          >
+            <i class="bi bi-person-circle me-1"></i> Dashboard
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="text-center py-5 bg-light">
+      <h1 class="fw-bold text-success">Marketplace Sampah</h1>
+      <p class="text-muted">
+        Tempat bertemunya warga yang butuh dan ingin menyedekahkan sampah
+        bernilai guna.
+      </p>
+      <a href="#" class="btn btn-success"
+        ><i class="bi bi-plus-circle me-1"></i> Posting Sampah</a
+      >
+    </header>
+
+    <!-- Filter -->
+    <div class="container my-4">
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <label class="me-2 fw-semibold">Filter:</label>
+          <select class="form-select d-inline-block w-auto">
+            <option>Semua Kategori</option>
+            <option>Plastik</option>
+            <option>Kertas</option>
+            <option>Logam</option>
+            <option>Organik</option>
+          </select>
+        </div>
+        <button class="btn btn-outline-success">
+          <i class="bi bi-arrow-repeat"></i> Segarkan
+        </button>
+      </div>
+    </div>
+
+    <!-- Marketplace Items -->
+    <div class="container">
+      <div class="row g-4">
+        <!-- Item 1 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1581093588401-22f6362f19cc?w=400"
+              class="card-img-top"
+              alt="Plastik Botol"
+            />
+            <div class="card-body">
+              <span class="badge badge-category">Plastik</span>
+              <h5 class="card-title mt-2">Botol Plastik Bersih</h5>
+              <p class="card-text text-muted small">
+                Kondisi: Kering dan bersih • RT 03 / RW 05
+              </p>
+              <p class="owner">
+                <i class="bi bi-person-circle"></i> Milik:
+                <strong>Bu Rani</strong>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="sc-value"><i class="bi bi-coin"></i> 10 SC</span>
+                <a href="#" class="btn btn-success btn-sm"
+                  ><i class="bi bi-bag-plus"></i> Ambil</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 (Gratis untuk Peternak) -->
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1585325701954-9d8b3b4efc4f?w=400"
+              class="card-img-top"
+              alt="Organik Busuk"
+            />
+            <div class="card-body">
+              <span class="badge bg-warning">Organik</span>
+              <h5 class="card-title mt-2">Sisa Sayuran Busuk</h5>
+              <p class="card-text text-muted small">
+                Cocok untuk kompos • RT 01 / RW 04
+              </p>
+              <p class="owner">
+                <i class="bi bi-person-circle"></i> Milik:
+                <strong>Pak Wawan</strong>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="free-tag">Free bagi Peternak</span>
+                <a href="#" class="btn btn-outline-success btn-sm"
+                  ><i class="bi bi-bag-check"></i> Ambil</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 (Gratis untuk Pemulung) -->
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1606811841685-3b0e29f0c9b2?w=400"
+              class="card-img-top"
+              alt="Logam Bekas"
+            />
+            <div class="card-body">
+              <span class="badge bg-secondary">Logam</span>
+              <h5 class="card-title mt-2">Kaleng Alumunium</h5>
+              <p class="card-text text-muted small">
+                Masih layak daur ulang • RT 02 / RW 07
+              </p>
+              <p class="owner">
+                <i class="bi bi-person-circle"></i> Milik:
+                <strong>Pak Dedi</strong>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="free-tag">Free bagi Pemulung</span>
+                <a href="#" class="btn btn-outline-success btn-sm"
+                  ><i class="bi bi-hand-thumbs-up"></i> Terima</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section: Jemput Sampah -->
+      <section class="py-5 bg-light mt-5">
+        <div class="container">
+          <div class="text-center mb-4">
+            <h2 class="fw-bold text-success">
+              <i class="bi bi-truck"></i> Jemput Sampah
+            </h2>
+            <p class="text-muted">
+              Jika tertarik dengan sampah diatas, silahkan Anda langsung menuju
+              rumah warga dan bantu selesaikan transaksi sampah dengan bijak.
+            </p>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-md-10">
+              <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title text-success">
+                    <i class="bi bi-info-circle"></i> Cara Jemput Sampah
+                  </h5>
+                  <ol class="mt-3">
+                    <li>
+                      Pilih postingan sampah yang ingin Anda ambil dari daftar
+                      <strong>Marketplace Sampah</strong>.
+                    </li>
+                    <li>
+                      Datangi rumah warga sesuai lokasi yang tertera di
+                      postingan dan sampaikan izin untuk mengambil sampah
+                      tersebut.
+                    </li>
+                    <li>
+                      Jika pemilik sampah memilih <strong>opsi lelang</strong>,
+                      pastikan Anda memiliki saldo
+                      <span class="text-success fw-semibold"
+                        >SedekahCoin (SC)</span
+                      >
+                      yang cukup.
+                    </li>
+                    <li>
+                      Jika lelang menggunakan <strong>rupiah</strong>, lakukan
+                      pembayaran secara langsung kepada pemilik sampah.
+                    </li>
+                    <li>
+                      Apabila transaksi disepakati dan sampah telah diambil,
+                      klik tombol
+                      <span class="badge bg-success">Saya Terima</span> untuk
+                      mengonfirmasi penyelesaian.
+                    </li>
+                  </ol>
+                  <div class="alert alert-warning mt-3">
+                    <i class="bi bi-exclamation-triangle-fill"></i>
+                    Ingat, hanya ambil sampah sesuai izin dan kesepakatan.
+                    Setiap tindakan terekam dalam sistem untuk menjaga
+                    kepercayaan warga.
+                  </div>
+
+                  <div class="text-center mt-4">
+                    <a href="#" class="btn btn-success btn-lg px-4">
+                      <i class="bi bi-hand-thumbs-up-fill"></i> Saya Terima
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Optional Example Card for Active Pickup -->
+              <div class="card border-0 shadow-sm mt-4">
+                <div
+                  class="card-body d-flex justify-content-between align-items-center"
+                >
+                  <div>
+                    <h6 class="fw-bold mb-1">Sedang dijemput:</h6>
+                    <p class="mb-0 small text-muted">
+                      Sampah Organik milik <strong>Pak Wawan</strong> — RT 01 /
+                      RW 04
+                    </p>
+                  </div>
+                  <button class="btn btn-outline-danger btn-sm">
+                    <i class="bi bi-x-circle"></i> Batalkan
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 mt-5 bg-dark text-light">
+      <div class="text-white my-2">
+        <b class="d-block my-4">UX-UI Links:</b>
+        <a class="d-block" href="index.html">Waste Connect Index</a>
+        <a class="d-block" href="waste_connect.html"
+          >Waste Connect Landing Page</a
+        >
+        <a class="d-block" href="waste_connect_dashboard_sedekah.html"
+          >Waste Connect - Sedekah Sampah</a
+        >
+        <a class="d-block" href="waste_connect_dashboard_eco_reward.html"
+          >Waste Connect - EcoReward</a
+        >
+        <a class="d-block" href="waste_connect_marketplace.html"
+          >Waste Connect - Marketplace</a
+        >
+        <a class="d-block" href="smart_government_dashboard.html"
+          >Waste Connect - Smart Government Dashboard</a
+        >
+      </div>
+      <small
+        >&copy; 2025 WasteConnect — “Postinglah Sampah pada Tempatnya!” — UX-UI
+        by <a href="https://kangsolihin.web.id">Kang Solihin</a></small
+      >
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

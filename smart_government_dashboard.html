@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Government Dashboard | WasteConnect</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f8f9fa;
+        font-family: "Poppins", sans-serif;
+      }
+      header {
+        background: linear-gradient(90deg, #007bff, #00b894);
+        color: white;
+        padding: 2rem 0;
+        text-align: center;
+      }
+      .card {
+        transition: all 0.3s ease;
+        border-radius: 15px;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      }
+      footer {
+        margin-top: 4rem;
+        background-color: #212529;
+        color: #fff;
+        text-align: center;
+        padding: 1rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Smart Government Dashboard</h1>
+      <p class="lead">
+        Pusat Informasi dan Pemantauan Pengelolaan Sampah Terintegrasi
+      </p>
+    </header>
+
+    <!-- Main Content -->
+    <section class="container my-5">
+      <div class="text-center mb-4">
+        <h3>Pilih Dashboard Instansi Anda</h3>
+        <p class="text-muted">
+          Akses dashboard sesuai peran dan kewenangan instansi terkait.
+        </p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Dashboard Kecamatan -->
+        <div class="col-md-4">
+          <div class="card text-center border-0 shadow-sm">
+            <div class="card-body">
+              <img
+                src="https://img.icons8.com/color/96/administrative-tools.png"
+                alt="Kecamatan"
+                class="mb-3"
+              />
+              <h5 class="card-title">Dashboard Kecamatan</h5>
+              <p class="card-text text-muted">
+                Pantau aktivitas pengelolaan sampah di tingkat RT, RW, dan desa
+                secara real-time.
+              </p>
+              <a
+                href="waste_connect_dashboard_kecamatan.html"
+                class="btn btn-primary w-100"
+                >Buka Dashboard</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Dashboard DLH -->
+        <div class="col-md-4">
+          <div class="card text-center border-0 shadow-sm">
+            <div class="card-body">
+              <img
+                src="https://img.icons8.com/color/96/earth-planet.png"
+                alt="DLH"
+                class="mb-3"
+              />
+              <h5 class="card-title">Dashboard DLH</h5>
+              <p class="card-text text-muted">
+                Lihat laporan dan analisis data pengelolaan sampah untuk seluruh
+                wilayah.
+              </p>
+              <a
+                href="waste_connect_dashboard_dlh.html"
+                class="btn btn-success w-100"
+                >Buka Dashboard</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Dashboard Pejabat -->
+        <div class="col-md-4">
+          <div class="card text-center border-0 shadow-sm">
+            <div class="card-body">
+              <img
+                src="https://img.icons8.com/color/96/city-buildings.png"
+                alt="Pejabat"
+                class="mb-3"
+              />
+              <h5 class="card-title">Dashboard Pejabat</h5>
+              <p class="card-text text-muted">
+                Akses data agregat, tren kebijakan, dan laporan indikator Smart
+                Waste City.
+              </p>
+              <a
+                href="waste_connect_dashboard_pejabat.html"
+                class="btn btn-warning w-100"
+                >Buka Dashboard</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="text-white my-2">
+        <b class="d-block my-4">UX-UI Links:</b>
+        <a class="d-block" href="index.html">Waste Connect Index</a>
+        <a class="d-block" href="waste_connect.html"
+          >Waste Connect Landing Page</a
+        >
+        <a class="d-block" href="waste_connect_dashboard_sedekah.html"
+          >Waste Connect - Sedekah Sampah</a
+        >
+        <a class="d-block" href="waste_connect_dashboard_eco_reward.html"
+          >Waste Connect - EcoReward</a
+        >
+        <a class="d-block" href="waste_connect_marketplace.html"
+          >Waste Connect - Marketplace</a
+        >
+        <a class="d-block" href="smart_government_dashboard.html"
+          >Waste Connect - Smart Government Dashboard</a
+        >
+      </div>
+      <small
+        >&copy; 2025 WasteConnect — “Postinglah Sampah pada Tempatnya!” — UX-UI
+        by <a href="https://kangsolihin.web.id">Kang Solihin</a></small
+      >
+    </footer>
+  </body>
+</html>

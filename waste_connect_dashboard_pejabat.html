@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard Pejabat Daerah | WasteConnect</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#"
+          >WasteConnect - Pejabat Daerah</a
+        >
+        <div class="text-white small">
+          🌿 Kabupaten Cerdas | <b>Bupati / Sekda</b>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container my-4">
+      <!-- Statistik Ringkas -->
+      <div class="row text-center mb-4">
+        <div class="col-md-3">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body">
+              <h6 class="text-primary">💰 Nilai Ekonomi Hijau</h6>
+              <h2 class="fw-bold">Rp 1,82 M</h2>
+              <small class="text-muted">Dari sirkulasi sampah daur ulang</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body">
+              <h6 class="text-primary">👥 Partisipasi Warga</h6>
+              <h2 class="fw-bold">67%</h2>
+              <small class="text-muted">Warga aktif memilah sampah</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body">
+              <h6 class="text-primary">♻️ Pengelolaan Terkelola</h6>
+              <h2 class="fw-bold">89%</h2>
+              <small class="text-muted">Sampah berhasil didaur ulang</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body">
+              <h6 class="text-primary">🌏 Pengurangan Emisi CO₂</h6>
+              <h2 class="fw-bold">−24%</h2>
+              <small class="text-muted">Dari aktivitas 1 tahun terakhir</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Peta Sebaran Kabupaten -->
+      <div class="card border-0 shadow-sm mb-4">
+        <div class="card-header bg-primary text-white">
+          🗺️ Sebaran Aktivitas dan Volume Sampah Kabupaten
+        </div>
+        <div class="card-body text-center">
+          <div class="bg-secondary bg-opacity-10 p-5 rounded">
+            [Peta interaktif dengan warna intensitas berdasarkan volume sampah
+            per kecamatan]
+          </div>
+        </div>
+      </div>
+
+      <!-- Grafik Tren Kinerja -->
+      <div class="row mb-4">
+        <div class="col-md-6">
+          <div class="card border-0 shadow-sm">
+            <div class="card-header bg-primary text-white">
+              📈 Tren Partisipasi Warga
+            </div>
+            <div class="card-body">
+              <canvas id="chartPartisipasi"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card border-0 shadow-sm">
+            <div class="card-header bg-primary text-white">
+              💹 Pertumbuhan Ekonomi Hijau
+            </div>
+            <div class="card-body">
+              <canvas id="chartEkonomi"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Indeks Kinerja Kecamatan -->
+      <div class="card border-0 shadow-sm mb-4">
+        <div class="card-header bg-primary text-white">
+          🏘️ Indeks Kinerja Kecamatan
+        </div>
+        <div class="card-body">
+          <table class="table table-striped align-middle">
+            <thead>
+              <tr>
+                <th>Kecamatan</th>
+                <th>Partisipasi</th>
+                <th>Pengelolaan</th>
+                <th>Nilai Ekonomi (Rp)</th>
+                <th>Trend</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Tanjungsari</td>
+                <td>82%</td>
+                <td>93%</td>
+                <td>210 jt</td>
+                <td>📈 Naik</td>
+              </tr>
+              <tr>
+                <td>Jatinangor</td>
+                <td>76%</td>
+                <td>89%</td>
+                <td>187 jt</td>
+                <td>📈 Naik</td>
+              </tr>
+              <tr>
+                <td>Cibugel</td>
+                <td>44%</td>
+                <td>66%</td>
+                <td>42 jt</td>
+                <td>📉 Turun</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Insight Sistem -->
+      <div class="card border-0 shadow-sm mb-5">
+        <div class="card-header bg-primary text-white">
+          💡 Insight dan Rekomendasi
+        </div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              ✅ Kecamatan <b>Tanjungsari</b> menunjukkan konsistensi
+              partisipasi warga tertinggi 3 bulan berturut-turut.
+            </li>
+            <li class="list-group-item">
+              ⚠️ Kecamatan <b>Cibugel</b> mengalami penurunan 15% dalam volume
+              sampah terkelola – perlu dukungan program edukasi warga.
+            </li>
+            <li class="list-group-item">
+              🌱 Program <b>EcoReward</b> menghasilkan peningkatan 8% dalam
+              partisipasi RT aktif.
+            </li>
+            <li class="list-group-item">
+              📢 Rekomendasi: Luncurkan
+              <b>Kampung Cerdas Tanpa Sampah</b> sebagai proyek percontohan
+              2026.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <footer class="text-center">
+        <div class="text-white my-2">
+          <b class="d-block my-4">UX-UI Links:</b>
+          <a class="d-block" href="index.html">Waste Connect Index</a>
+          <a class="d-block" href="waste_connect.html"
+            >Waste Connect Landing Page</a
+          >
+          <a class="d-block" href="waste_connect_dashboard_sedekah.html"
+            >Waste Connect - Sedekah Sampah</a
+          >
+          <a class="d-block" href="waste_connect_dashboard_eco_reward.html"
+            >Waste Connect - EcoReward</a
+          >
+          <a class="d-block" href="waste_connect_marketplace.html"
+            >Waste Connect - Marketplace</a
+          >
+          <a class="d-block" href="smart_government_dashboard.html"
+            >Waste Connect - Smart Government Dashboard</a
+          >
+        </div>
+        <small
+          >&copy; 2025 WasteConnect — “Postinglah Sampah pada Tempatnya!” —
+          UX-UI by <a href="https://kangsolihin.web.id">Kang Solihin</a></small
+        >
+      </footer>
+    </div>
+
+    <!-- Chart.js -->
+    <script>
+      const ctx1 = document.getElementById("chartPartisipasi");
+      new Chart(ctx1, {
+        type: "line",
+        data: {
+          labels: [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "Mei",
+            "Jun",
+            "Jul",
+            "Agu",
+            "Sep",
+            "Okt",
+          ],
+          datasets: [
+            {
+              label: "Partisipasi Warga (%)",
+              data: [52, 58, 63, 64, 68, 71, 73, 76, 79, 82],
+              borderColor: "#0d6efd",
+              backgroundColor: "rgba(13,110,253,0.2)",
+              fill: true,
+              tension: 0.4,
+            },
+          ],
+        },
+        options: { responsive: true },
+      });
+
+      const ctx2 = document.getElementById("chartEkonomi");
+      new Chart(ctx2, {
+        type: "bar",
+        data: {
+          labels: [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "Mei",
+            "Jun",
+            "Jul",
+            "Agu",
+            "Sep",
+            "Okt",
+          ],
+          datasets: [
+            {
+              label: "Nilai Ekonomi Hijau (Rp Juta)",
+              data: [80, 90, 120, 150, 170, 190, 210, 230, 260, 290],
+              backgroundColor: "#198754",
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          scales: { y: { beginAtZero: true } },
+        },
+      });
+    </script>
+  </body>
+</html>

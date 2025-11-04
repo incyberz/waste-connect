@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard Kecamatan | WasteConnect</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">WasteConnect - Kecamatan</a>
+        <div class="d-flex text-white">
+          <span class="me-3">👤 Kec. Tanjungsari</span>
+          <button class="btn btn-outline-light btn-sm">Logout</button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container my-4">
+      <!-- Statistik Ringkas -->
+      <div class="row text-center mb-4">
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="text-success">👥 Warga Aktif</h5>
+              <h2 class="fw-bold">1,248</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="text-success">🗑️ Total Posting Sampah</h5>
+              <h2 class="fw-bold">6,520</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="text-success">♻️ Sampah Terkelola</h5>
+              <h2 class="fw-bold">82%</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Peta Sebaran -->
+      <div class="card border-0 shadow-sm mb-4">
+        <div class="card-header bg-success text-white">
+          🗺️ Peta Sebaran Sampah
+        </div>
+        <div class="card-body text-center">
+          <div class="bg-secondary bg-opacity-10 p-5 rounded">
+            [Peta interaktif wilayah Tanjungsari akan tampil di sini]
+          </div>
+        </div>
+      </div>
+
+      <!-- Grafik Jenis Sampah -->
+      <div class="card border-0 shadow-sm mb-4">
+        <div class="card-header bg-success text-white">
+          📊 Jenis Sampah Terbanyak
+        </div>
+        <div class="card-body">
+          <canvas id="chartJenis"></canvas>
+        </div>
+      </div>
+
+      <!-- Daftar Laporan Warga -->
+      <div class="card border-0 shadow-sm mb-4">
+        <div class="card-header bg-success text-white">
+          📋 Laporan Warga Terbaru
+        </div>
+        <div class="card-body">
+          <table class="table table-striped align-middle">
+            <thead>
+              <tr>
+                <th>Warga</th>
+                <th>Jenis Sampah</th>
+                <th>Status</th>
+                <th>Tanggal</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ahmad Fauzi</td>
+                <td>Organik (Sisa dapur)</td>
+                <td><span class="badge bg-warning">Menunggu Jemput</span></td>
+                <td>04 Nov 2025</td>
+                <td>
+                  <button class="btn btn-sm btn-outline-success">
+                    Lihat Detail
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>Siti Lestari</td>
+                <td>Plastik (Botol bekas)</td>
+                <td><span class="badge bg-success">Sudah Terambil</span></td>
+                <td>03 Nov 2025</td>
+                <td>
+                  <button class="btn btn-sm btn-outline-success">
+                    Lihat Detail
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>Dedi Mulyadi</td>
+                <td>Non-Organik (Besi bekas)</td>
+                <td><span class="badge bg-danger">Belum Dikelola</span></td>
+                <td>02 Nov 2025</td>
+                <td>
+                  <button class="btn btn-sm btn-outline-success">
+                    Lihat Detail
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Daftar Mitra Aktif -->
+      <div class="card border-0 shadow-sm mb-5">
+        <div class="card-header bg-success text-white">🤝 Mitra Aktif</div>
+        <div class="card-body">
+          <div class="row g-3">
+            <div class="col-md-3">
+              <div class="card h-100 text-center border-success">
+                <div class="card-body">
+                  <img
+                    src="https://i.pravatar.cc/80?img=1"
+                    class="rounded-circle mb-2"
+                    alt=""
+                  />
+                  <h6 class="fw-bold mb-0">Budi</h6>
+                  <small class="text-muted">Pemulung</small><br />
+                  <span class="badge bg-success mt-1">RT 04 / RW 02</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card h-100 text-center border-success">
+                <div class="card-body">
+                  <img
+                    src="https://i.pravatar.cc/80?img=2"
+                    class="rounded-circle mb-2"
+                    alt=""
+                  />
+                  <h6 class="fw-bold mb-0">Iwan</h6>
+                  <small class="text-muted">Peternak</small><br />
+                  <span class="badge bg-success mt-1">RT 05 / RW 03</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card h-100 text-center border-success">
+                <div class="card-body">
+                  <img
+                    src="https://i.pravatar.cc/80?img=3"
+                    class="rounded-circle mb-2"
+                    alt=""
+                  />
+                  <h6 class="fw-bold mb-0">Nia</h6>
+                  <small class="text-muted">Pengompos</small><br />
+                  <span class="badge bg-success mt-1">RT 01 / RW 01</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="text-center">
+        <div class="text-white my-2">
+          <b class="d-block my-4">UX-UI Links:</b>
+          <a class="d-block" href="index.html">Waste Connect Index</a>
+          <a class="d-block" href="waste_connect.html"
+            >Waste Connect Landing Page</a
+          >
+          <a class="d-block" href="waste_connect_dashboard_sedekah.html"
+            >Waste Connect - Sedekah Sampah</a
+          >
+          <a class="d-block" href="waste_connect_dashboard_eco_reward.html"
+            >Waste Connect - EcoReward</a
+          >
+          <a class="d-block" href="waste_connect_marketplace.html"
+            >Waste Connect - Marketplace</a
+          >
+          <a class="d-block" href="smart_government_dashboard.html"
+            >Waste Connect - Smart Government Dashboard</a
+          >
+        </div>
+        <small
+          >&copy; 2025 WasteConnect — “Postinglah Sampah pada Tempatnya!” —
+          UX-UI by <a href="https://kangsolihin.web.id">Kang Solihin</a></small
+        >
+      </footer>
+    </div>
+
+    <script>
+      const ctx = document.getElementById("chartJenis");
+      new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: ["Organik", "Plastik", "Kaca", "Besi", "Kertas"],
+          datasets: [
+            {
+              label: "Kg Sampah",
+              data: [1200, 950, 320, 150, 500],
+              borderWidth: 1,
+              backgroundColor: [
+                "#4caf50",
+                "#81c784",
+                "#aed581",
+                "#c8e6c9",
+                "#e8f5e9",
+              ],
+            },
+          ],
+        },
+        options: {
+          scales: { y: { beginAtZero: true } },
+        },
+      });
+    </script>
+  </body>
+</html>

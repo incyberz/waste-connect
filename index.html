@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WasteConnect | Solusi Pengelolaan Sampah Terpadu</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f7f9fc;
+      }
+      .module-card {
+        border: none;
+        border-radius: 20px;
+        transition: 0.3s;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      }
+      .module-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+      }
+      .icon-wrapper {
+        font-size: 2.5rem;
+        color: #28a745;
+      }
+      .hero {
+        background: linear-gradient(to right, #28a745, #218838);
+        color: white;
+        padding: 60px 0;
+        text-align: center;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="container">
+        <h1 class="fw-bold">🌍 WasteConnect Solutions</h1>
+        <p class="lead">
+          Ekosistem cerdas untuk pengelolaan sampah berkelanjutan — dari warga
+          hingga pemerintah.
+        </p>
+      </div>
+    </section>
+
+    <!-- MODULES SECTION -->
+    <section class="container my-5">
+      <h2 class="text-center mb-4 fw-bold">Modul WasteConnect</h2>
+      <div class="row g-4">
+        <!-- WasteConnect (Utama) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card module-card h-100 text-center p-3">
+            <div class="icon-wrapper mb-3"><i class="bi bi-diagram-3"></i></div>
+            <h5 class="fw-bold">WasteConnect (Program Utama)</h5>
+            <p>
+              <i>Matching System App</i>: Menghubungkan warga, pemulung,
+              peternak, pengompos, dan pemerintah dalam satu sistem cerdas.
+            </p>
+            <a
+              target="_blank"
+              href="waste_connect.html"
+              class="btn btn-success mt-auto"
+              >Lihat Modul</a
+            >
+          </div>
+        </div>
+
+        <!-- Sedekah Sampah -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card module-card h-100 text-center p-3">
+            <div class="icon-wrapper mb-3"><i class="bi bi-heart"></i></div>
+            <h5 class="fw-bold">Sedekah Sampah</h5>
+            <p>
+              Bagi warga yang ingin sumbang/lelang sampah yang bernilai guna
+              agar tidak terbuang percuma.
+            </p>
+            <a
+              target="_blank"
+              href="waste_connect_dashboard_sedekah.html"
+              class="btn btn-success mt-auto"
+              >Lihat Modul</a
+            >
+          </div>
+        </div>
+
+        <!-- Marketplace Sampah -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card module-card h-100 text-center p-3">
+            <div class="icon-wrapper mb-3"><i class="bi bi-cart3"></i></div>
+            <h5 class="fw-bold">Marketplace Sampah</h5>
+            <p>
+              Tempat bertemunya pencari sampah — pemulung, pengrajin, peternak,
+              dan pengompos.
+            </p>
+            <a
+              target="_blank"
+              href="waste_connect_marketplace.html"
+              class="btn btn-success mt-auto"
+              >Lihat Modul</a
+            >
+          </div>
+        </div>
+
+        <!-- EcoReward -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card module-card h-100 text-center p-3">
+            <div class="icon-wrapper mb-3"><i class="bi bi-coin"></i></div>
+            <h5 class="fw-bold">EcoReward</h5>
+            <p>
+              Sistem gamifikasi berbasis SedekahCoin (SC) yang memberi
+              penghargaan atas kontribusi warga.
+            </p>
+            <a
+              target="_blank"
+              href="waste_connect_dashboard_eco_reward.html"
+              class="btn btn-success mt-auto"
+              >Lihat Modul</a
+            >
+          </div>
+        </div>
+
+        <!-- Smart Government Dashboard -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card module-card h-100 text-center p-3">
+            <div class="icon-wrapper mb-3">
+              <i class="bi bi-bar-chart-line"></i>
+            </div>
+            <h5 class="fw-bold">Smart Government Dashboard</h5>
+            <p>
+              Analitik cerdas untuk Kecamatan, DLH, dan Pemerintah Daerah dalam
+              memantau perilaku pengelolaan sampah warga.
+            </p>
+            <a
+              href="smart_government_dashboard.html"
+              class="btn btn-success mt-auto"
+              >Pilih Modul</a
+            >
+          </div>
+        </div>
+
+        <!-- Modul Tambahan -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card module-card h-100 text-center p-3">
+            <div class="icon-wrapper mb-3"><i class="bi bi-lightbulb"></i></div>
+            <h5 class="fw-bold">Inovasi Lainnya</h5>
+            <p>
+              Modul baru akan terus dikembangkan seperti SmartWaste AI, edukasi
+              daur ulang, dan integrasi IoT.
+            </p>
+            <a href="#" class="btn btn-outline-success mt-auto">Segera Hadir</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Struktur Modul WasteConnect -->
+    <section id="struktur-modul" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold text-success">Struktur Modul WasteConnect</h2>
+          <p class="text-muted">
+            Lima modul utama yang saling terhubung untuk menciptakan ekosistem
+            pengelolaan sampah berkelanjutan.
+          </p>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-bordered table-hover align-middle">
+            <thead class="table-success text-center">
+              <tr>
+                <th scope="col" style="width: 50px">No</th>
+                <th scope="col" style="width: 180px">Nama Modul</th>
+                <th scope="col">Deskripsi Singkat</th>
+                <th scope="col" style="width: 150px">Pengguna Utama</th>
+                <th scope="col" style="width: 200px">Integrasi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center fw-bold">1</td>
+                <td><strong>WasteConnect (Modul Utama)</strong></td>
+                <td>
+                  Portal utama yang mengintegrasikan seluruh fitur pengelolaan
+                  sampah: edukasi, posting, monitoring, hingga reward. Menjadi
+                  pusat autentikasi dan navigasi antar modul.
+                </td>
+                <td>
+                  Semua pengguna<br />(Warga, Pemulung, UMKM, DLH, Pemerintah)
+                </td>
+                <td>
+                  Menghubungkan semua data antar modul dan menampilkan dashboard
+                  umum.
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center fw-bold">2</td>
+                <td><strong>Sedekah & Lelang Sampah</strong></td>
+                <td>
+                  Fitur bagi warga untuk memposting sampah organik maupun
+                  anorganik sebagai bentuk “sedekah” atau lelang bagi pemulung,
+                  peternak, pengompos, atau UMKM Daur Ulang.
+                </td>
+                <td>Warga</td>
+                <td>
+                  Terintegrasi dengan <strong>EcoReward</strong> dan
+                  <strong>Marketplace</strong>.
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center fw-bold">3</td>
+                <td><strong>Marketplace</strong></td>
+                <td>
+                  Platform bagi pencari sampah seperti pemulung, peternak
+                  maggot, dan UMKM daur ulang untuk menemukan bahan yang
+                  dibutuhkan. Mendukung transaksi gratis (sedekah) atau lelang
+                  (SC/Rupiah).
+                </td>
+                <td>Pemulung, Peternak, UMKM</td>
+                <td>
+                  Terhubung dengan <strong>Sedekah Sampah</strong> dan
+                  <strong>EcoReward</strong>.
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center fw-bold">4</td>
+                <td><strong>EcoReward</strong></td>
+                <td>
+                  Sistem gamifikasi yang memberi poin (SedekahCoin/SC) atas
+                  aktivitas warga: memilah, menyedekahkan, atau membeli sampah
+                  daur ulang. Ada leaderboard & pencapaian lingkungan.
+                </td>
+                <td>Warga, RT/RW, Kecamatan</td>
+                <td>
+                  Terintegrasi dengan <strong>Sedekah Sampah</strong>,
+                  <strong>Marketplace</strong>, dan
+                  <strong>Dashboard Pemerintah</strong>.
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center fw-bold">5</td>
+                <td><strong>Smart Government Dashboard</strong></td>
+                <td>
+                  Dashboard real-time untuk Kecamatan, DLH, dan pejabat terkait.
+                  Menampilkan data partisipasi warga, volume sampah terpilah,
+                  nilai ekonomi sirkular, dan dampak lingkungan (CO₂ reduction).
+                </td>
+                <td>Kecamatan, DLH, Pejabat Pemerintah</td>
+                <td>
+                  Mengambil data dari semua modul dan menampilkan insight
+                  kebijakan berbasis data.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mt-4 text-center">
+          <small class="text-muted fst-italic"
+            >Versi Final Draft – WasteConnect Smart Waste Management
+            System</small
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="tabel-modul" class="container my-5">
+      <h2 class="text-center mb-4">Sub Modul WasteConnect</h2>
+      <table class="table table-bordered table-striped">
+        <thead class="table-dark text-center">
+          <tr>
+            <th>No</th>
+            <th>Modul</th>
+            <th>Sub Modul</th>
+            <th>Keterangan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Modul 1: WasteConnect -->
+          <tr>
+            <td>1</td>
+            <td>WasteConnect</td>
+            <td>1.1 Landing Page WasteConnect</td>
+            <td>
+              Halaman utama yang menampilkan informasi umum sistem WasteConnect
+              dan akses ke seluruh modul.
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>WasteConnect</td>
+            <td>1.2 Autentikasi & Manajemen User</td>
+            <td>
+              Fitur login, registrasi, dan pengelolaan role (Warga, UMKM,
+              Kecamatan, DLH, Admin).
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>WasteConnect</td>
+            <td>1.3 Integrasi Modul</td>
+            <td>
+              Mengelola konektivitas antar modul agar data dan notifikasi dapat
+              saling terhubung.
+            </td>
+          </tr>
+
+          <!-- Modul 2: Sedekah Sampah -->
+          <tr>
+            <td>4</td>
+            <td>Sedekah Sampah</td>
+            <td>2.1 Form Donasi Sampah</td>
+            <td>
+              Warga dapat memasukkan data sampah yang ingin disedekahkan
+              berdasarkan jenis dan berat.
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Sedekah Sampah</td>
+            <td>2.2 Penjadwalan & Pickup</td>
+            <td>
+              Menjadwalkan pengambilan sampah oleh petugas atau mitra bank
+              sampah.
+            </td>
+          </tr>
+
+          <!-- Modul 3: Marketplace -->
+          <tr>
+            <td>6</td>
+            <td>Marketplace</td>
+            <td>3.1 Katalog Sampah & Produk Daur Ulang</td>
+            <td>
+              Menampilkan daftar sampah dan produk daur ulang yang tersedia
+              untuk dijual atau dibeli.
+            </td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Marketplace</td>
+            <td>3.2 Transaksi & Pembayaran</td>
+            <td>
+              Mengelola proses jual beli dan pembayaran antara penjual dan
+              pembeli.
+            </td>
+          </tr>
+
+          <!-- Modul 4: EcoReward -->
+          <tr>
+            <td>8</td>
+            <td>EcoReward</td>
+            <td>4.1 Poin & Level Warga</td>
+            <td>
+              Memberikan poin untuk aktivitas positif warga (menyumbang,
+              menjual, mendaur ulang).
+            </td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>EcoReward</td>
+            <td>4.2 Tantangan & Badge</td>
+            <td>
+              Gamifikasi dalam bentuk misi harian, mingguan, dan penghargaan
+              digital.
+            </td>
+          </tr>
+
+          <!-- Modul 5: Smart Gov Dashboard -->
+          <tr>
+            <td>10</td>
+            <td>Smart Gov Dashboard</td>
+            <td>5.1 Dashboard Kecamatan</td>
+            <td>
+              Menampilkan data sampah per kelurahan, partisipasi warga, dan tren
+              pengumpulan sampah.
+            </td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>Smart Gov Dashboard</td>
+            <td>5.2 Dashboard DLH</td>
+            <td>
+              Analitik menyeluruh terkait volume sampah, distribusi, dan
+              efektivitas kebijakan lingkungan.
+            </td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>Smart Gov Dashboard</td>
+            <td>5.3 Dashboard Pejabat Daerah</td>
+            <td>
+              Ringkasan kebijakan, kinerja program, dan integrasi dengan data
+              carbon credit & CSR.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="analisis-kpkp" class="container my-5">
+      <h2 class="text-center mb-4">Tabel Analisis KPKP - WasteConnect</h2>
+      <table class="table table-bordered table-striped">
+        <thead class="table-dark text-center">
+          <tr>
+            <th>No</th>
+            <th>Kondisi</th>
+            <th>Permasalahan</th>
+            <th>Kebutuhan (Modul)</th>
+            <th>Peluang</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Baris 1 -->
+          <tr>
+            <td>1</td>
+            <td>
+              Sebagian besar masyarakat masih melakukan pembuangan sampah secara
+              campur tanpa proses pemilahan sejak dari sumber rumah tangga.
+            </td>
+            <td>
+              Rendahnya kesadaran masyarakat serta belum tersedianya sarana dan
+              sistem yang memudahkan warga dalam memilah dan menyalurkan sampah
+              dengan benar.
+            </td>
+            <td><strong>Sedekah Sampah</strong></td>
+            <td>
+              Meningkatkan partisipasi dan kepedulian masyarakat melalui
+              penyediaan platform digital yang memfasilitasi donasi dan
+              penyaluran sampah secara terstruktur dan berkelanjutan.
+            </td>
+          </tr>
+
+          <!-- Baris 2 -->
+          <tr>
+            <td>2</td>
+            <td>
+              Belum tersedia wadah yang mempertemukan pihak penyedia sampah
+              dengan pelaku usaha atau individu yang membutuhkan bahan daur
+              ulang.
+            </td>
+            <td>
+              Terbatasnya akses dan informasi antara warga penghasil sampah,
+              pemulung, serta pelaku UMKM daur ulang menyebabkan rantai
+              pengelolaan sampah tidak optimal.
+            </td>
+            <td><strong>Marketplace</strong></td>
+            <td>
+              Menciptakan ekosistem digital yang mempertemukan penyedia dan
+              pencari sampah secara langsung, sehingga memperkuat rantai nilai
+              ekonomi sirkular dan mendukung pengelolaan sampah berkelanjutan.
+            </td>
+          </tr>
+
+          <!-- Baris 3 -->
+          <tr>
+            <td>3</td>
+            <td>
+              Pengelolaan data dan aktivitas persampahan di tingkat warga,
+              komunitas, dan pemerintah masih terpisah dan belum terintegrasi.
+            </td>
+            <td>
+              Tidak adanya sistem terpadu yang menghubungkan berbagai pihak
+              terkait, menyebabkan kebijakan dan tindakan pengelolaan sampah
+              sering kali tidak berbasis data aktual.
+            </td>
+            <td><strong>WasteConnect</strong></td>
+            <td>
+              Mengembangkan sistem terintegrasi yang menghubungkan warga, pelaku
+              usaha daur ulang, dan pemerintah daerah dalam satu platform
+              digital untuk mendukung pengambilan keputusan berbasis data dan
+              transparansi pengelolaan sampah.
+            </td>
+          </tr>
+
+          <!-- Baris 4 -->
+          <tr>
+            <td>4</td>
+            <td>
+              Partisipasi masyarakat dalam program pengelolaan dan pemilahan
+              sampah masih rendah karena kurangnya motivasi dan sistem
+              penghargaan yang menarik.
+            </td>
+            <td>
+              Tidak adanya mekanisme insentif atau sistem penghargaan yang
+              terukur membuat warga kurang terdorong untuk berperilaku ramah
+              lingkungan secara berkelanjutan.
+            </td>
+            <td><strong>EcoReward</strong></td>
+            <td>
+              Mendorong perubahan perilaku masyarakat melalui sistem gamifikasi
+              dan penghargaan digital (SedekahCoin) yang memberikan apresiasi
+              bagi warga yang aktif berkontribusi dalam kegiatan pengelolaan
+              sampah.
+            </td>
+          </tr>
+
+          <!-- Baris 5 -->
+          <tr>
+            <td>5</td>
+            <td>
+              Pemerintah daerah dan dinas kebersihan belum memiliki data
+              real-time mengenai perilaku, kontribusi, dan pola partisipasi
+              masyarakat dalam pengelolaan sampah.
+            </td>
+            <td>
+              Kurangnya sistem pemantauan terintegrasi menyebabkan proses
+              evaluasi kebijakan, alokasi sumber daya, dan pengambilan keputusan
+              strategis tidak berbasis data yang akurat dan mutakhir.
+            </td>
+            <td><strong>Smart Gov Dashboard</strong></td>
+            <td>
+              Menyediakan dasbor cerdas berbasis data real-time yang menampilkan
+              indikator partisipasi warga, volume sampah, serta kinerja program
+              pengelolaan sampah untuk mendukung kebijakan yang efektif dan
+              transparan.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer class="text-center py-4 bg-light border-top">
+      <div class="text-white my-2">
+        <b class="d-block my-4">UX-UI Links:</b>
+        <a class="d-block" href="index.html">Waste Connect Index</a>
+        <a class="d-block" href="waste_connect.html"
+          >Waste Connect Landing Page</a
+        >
+        <a class="d-block" href="waste_connect_dashboard_sedekah.html"
+          >Waste Connect - Sedekah Sampah</a
+        >
+        <a class="d-block" href="waste_connect_dashboard_eco_reward.html"
+          >Waste Connect - EcoReward</a
+        >
+        <a class="d-block" href="waste_connect_marketplace.html"
+          >Waste Connect - Marketplace</a
+        >
+        <a class="d-block" href="smart_government_dashboard.html"
+          >Waste Connect - Smart Government Dashboard</a
+        >
+      </div>
+      <small
+        >&copy; 2025 WasteConnect — “Postinglah Sampah pada Tempatnya!” — UX-UI
+        by <a href="https://kangsolihin.web.id">Kang Solihin</a></small
+      >
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
